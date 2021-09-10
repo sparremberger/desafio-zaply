@@ -6,7 +6,6 @@ Outras tecnologias auxiliares: react-bootstrap, glob e mongoose, MongoDB Atlas (
 
 // Utilização:
 Método simples: acesse o frontend (react-app) no meu servidor - http://alanspa.xyz:3000
-O backend está localizado em http://alanspa.xyz:5000/api
 
 Para teste local:
 Após baixar o código, navegue até o diretório /backend e digite o comando 'yarn install' para instalar todas as dependências.
