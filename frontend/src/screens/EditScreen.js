@@ -34,18 +34,15 @@ const EditScreen = (props) => {
                 <Form.Label>ID</Form.Label>
                 <Form.Control type="text" value={state.product.id || ""} />
                 <Form.Text className="text-muted">
-                    ID do produto. Não pode ser alterado.
+                    O ID não pode ser alterado.
                 </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="image">
-                <Form.Label>Imagem (link)</Form.Label>
+                <Form.Label>Imagem (URL)</Form.Label>
                 <Form.Control
                     type="text"
                     defaultValue={state.product.image || ""}
                 />
-                <Form.Text className="text-muted">
-                    URL da imagem do produto.
-                </Form.Text>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="name">
@@ -54,7 +51,6 @@ const EditScreen = (props) => {
                     type="text"
                     defaultValue={state.product.name || ""}
                 />
-                <Form.Text className="text-muted">Nome do produto.</Form.Text>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="categories">
@@ -63,9 +59,6 @@ const EditScreen = (props) => {
                     type="text"
                     defaultValue={state.product.categories || ""}
                 />
-                <Form.Text className="text-muted">
-                    Categorias do produto.
-                </Form.Text>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="price">
@@ -74,13 +67,11 @@ const EditScreen = (props) => {
                     type="text"
                     defaultValue={state.product.price || ""}
                 />
-                <Form.Text className="text-muted">Preço do produto.</Form.Text>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="brand">
                 <Form.Label>Marca</Form.Label>
                 <Form.Control type="text" defaultValue={state.product.brand} />
-                <Form.Text className="text-muted">Marca do produto.</Form.Text>
             </Form.Group>
 
             <Button variant="primary" type="submit">
