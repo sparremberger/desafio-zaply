@@ -5,11 +5,22 @@ API escrita em TypeScript, frontend em JavaScript.
 Outras tecnologias auxiliares: react-bootstrap, glob e mongoose, MongoDB Atlas (para hospedagem do banco de dados remoto)
 
 // Utilização:
+Método simples: acesse o frontend (react-app) no meu servidor - http://alanspa.xyz:3000
+O backend está localizado em http://alanspa.xyz:5000/api
+
+Para teste local:
 Após baixar o código, navegue até o diretório /backend e digite o comando 'yarn install' para instalar todas as dependências.
 Faça a mesma coisa para o diretório /frontend, instalando as dependências do react.
 
 Para rodar o backend, será necessário rodar também um banco de dados. Para sua conveniência, o backend está hospedado no meu servidor:
-//
+http://alanspa.xyz:5000/api/
+
+Rotas:
+GET /api/produtos/
+GET /api/id/:id
+GET /api/produtos/search/?&q=mercearia&q=nesfit
+PUT /api/id/
+
 Caso prefira testar tudo localmente, será necessário configurar um banco de dados MongoDB e editar a linha do arquivo .env para a direção do seu banco.
 Em seguida, rode o script buildDB.ts para construir o banco, e o backend poderá então ser rodado localmente.
 
